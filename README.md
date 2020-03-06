@@ -1,3 +1,3 @@
 # taskflow-projects
 
-Library of gamified cogntive-training tasks used for clincal trials.
+Library of gamified cogntive-training tasks used for research.
