@@ -10,8 +10,8 @@ These tasks are based on standard psychological tasks that engage working memory
 **NOTE:** The task behavior and layout was *not* designed to be mobile-friendly, as they require keyboard responses.
 
 ## How to access tasks
-  1. Download and extract src folder
-  2. Open index.html
+  1. Download and extract
+  2. Open index.html (one for each task)
   
 ### Configuration
 These tasks are configured to run from the lab's proprietary server and web platform, which tracks participant sessions and level-up progress. However, they can be run locally, and accessing different levels for a local run is as simple as changing a value in global-configuration.js ( src/js/editor/global-configuration.js ).
