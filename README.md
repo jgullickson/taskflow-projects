@@ -28,4 +28,31 @@ These tasks are configured to run from the lab's proprietary server and web plat
 
 ## Screenshots
 
+### Nebula 9 (Flanker)
 
+![Nebula 9 title screen with stars and asteroids in background](./screenshots/flanker-space-1.png)
+
+![Nebula 9 instruction screen](./screenshots/flanker-space-2.png)
+
+![Nebula 9 gameplay showing asteroid impact warning](./screenshots/flanker-space-3.png)
+
+![Nebula 9 performance dashboard](./screenshots/flanker-space-4.png)
+
+### Dungeon Crawler (Flanker)
+
+![Dungeon crawler gameplay showing a battle with a spider](./screenshots/flanker-dungeon-1.png)
+
+![Dungeon crawler performance dashboard showing a newly earned weapon](./screenshots/flanker-dungeon-3.png)
+
+
+### Restuarant Rush (N-back)
+
+![Restaurant Rush title screen with kitchen in background](./screenshots/nback-restaurant-1.png)
+
+![Restaurant Rush instruction slide](./screenshots/nback-restaurant-2.png)
+
+### Sailing by the Stars (DPX)
+
+![Sailing by the Stars title screen with waves and stars in background](./screenshots/dpx-sailing-1.png)
+
+![Sailing by the Stars instruction screen](./screenshots/dpx-sailing-2.png)
