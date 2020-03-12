@@ -28,4 +28,12 @@ These tasks are configured to run from the lab's proprietary server and web plat
 
 ## Screenshots
 
+### Nebula 9 (Flanker)
+
 ![Nebula 9 title screen with stars and asteroids in background](./screenshots/flanker-space-1.png)
+
+![Nebula 9 instruction screen](./screenshots/flanker-space-2.png)
+
+![Nebula 9 gameplay showing asteroid impact warning](./screenshots/flanker-space-3.png)
+
+![Nebula 9 performance dashboard](./screenshots/flanker-space-4.png)
