@@ -16,7 +16,7 @@ These tasks are based on standard psychological tasks that engage working memory
 ### Configuration
 These tasks are configured to run from the lab's proprietary server and web platform, which tracks participant sessions and level-up progress. However, they can be run locally, and accessing different levels for a local run is as simple as changing a value in global-configuration.js ( src/js/editor/global-configuration.js ).
 
-`
+```javascript
     /**
      * Local configuration.
      */
@@ -24,7 +24,7 @@ These tasks are configured to run from the lab's proprietary server and web plat
         LEVEL: 0, // level number corresponding to levels in configuration.js
         LENGTH: 10 // time in minutes before terminating (or moving to next task when run on server) Waits for current level to finish)
     },
-`
+```
 
 ## Screenshots
 
