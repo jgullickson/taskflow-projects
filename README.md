@@ -44,3 +44,15 @@ These tasks are configured to run from the lab's proprietary server and web plat
 
 ![Dungeon crawler performance dashboard showing a newly earned weapon](./screenshots/flanker-dungeon-3.png)
 
+
+### Restuarant Rush (N-back)
+
+![Restaurant Rush title screen with kitchen in background](./screenshots/n-back-restaurant-1.png)
+
+![Restaurant Rush instruction slide](./screenshots/n-back-restaurant-2.png)
+
+### Sailing by the Stars (DPX)
+
+![Sailing by the Stars title screen with waves and stars in background](./screenshots/dpx-sailing-1.png)
+
+![Sailing by the Stars instruction screen](./screenshots/dpx-sailing-2.png)
