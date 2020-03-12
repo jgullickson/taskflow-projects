@@ -47,9 +47,9 @@ These tasks are configured to run from the lab's proprietary server and web plat
 
 ### Restuarant Rush (N-back)
 
-![Restaurant Rush title screen with kitchen in background](./screenshots/n-back-restaurant-1.png)
+![Restaurant Rush title screen with kitchen in background](./screenshots/nback-restaurant-1.png)
 
-![Restaurant Rush instruction slide](./screenshots/n-back-restaurant-2.png)
+![Restaurant Rush instruction slide](./screenshots/nback-restaurant-2.png)
 
 ### Sailing by the Stars (DPX)
 
