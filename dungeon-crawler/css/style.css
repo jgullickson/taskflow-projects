@@ -1,0 +1,623 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    color: rgb(255, 255, 255, 0.75);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#title {
+    font-family: 'Dwarves', sans-serif;
+    color: rgb(202, 96, 25);
+    background-color: #161616;
+    opacity: 0.95;
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#title h1 {
+    font-size: 4vh;
+    line-height: 4.3vh !important;
+}
+
+.jspsych-content {
+position: relative;
+}
+
+.flanker-text {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.in-line-img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.gridchild-1 {
+    margin: 2em;
+    grid-area: bottom;
+    margin-top: 0;
+}
+
+.gridchild-1 .block-text {
+    font-size: 1.5rem;
+}
+
+.gridchild-2 {
+    margin: 2em;
+    grid-area: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+} */
+
+.responded {
+    visibility: hidden;
+}
+
+.arrow-intro {
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    opacity: 0.75;
+    margin-bottom: 25px
+}
+
+#task-display-stage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    text-align: center;
+    /* padding-top: 250px; */
+}
+
+.tight {
+    padding: 0px;
+    /* min-height: 100px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 150px */
+    min-height: 4vw;
+    min-width: 4vw;
+    max-height: 4vw;
+    max-width: 4vw;
+}
+
+div.jspsych-poldrack-categorize-stimulus {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+}
+
+div.jspsych-poldrack-categorize-stimulus img {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+}
+
+#instruction-text-effect {
+    padding-top: 50px;
+}
+
+/* .left {
+    -moz-transform: scaleX(-1) !important;
+    -o-transform: scaleX(-1) !important;
+    -webkit-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+    filter: FlipH !important;
+    -ms-filter: "FlipH" !important;
+}
+
+#flanker-left {
+    -moz-transform: scaleX(-1) !important;
+    -o-transform: scaleX(-1) !important;
+    -webkit-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+    filter: FlipH !important;
+    -ms-filter: "FlipH" !important;
+} */
+
+.target {
+    fill: rgb(255, 255, 255, 0.75);
+}
+
+#yellow {
+    fill: rgb(255, 255, 0, 0.75);
+}
+
+.stimuli-container {
+    width: 30vw;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-message {
+    font-family: Dwarves;
+    font-size: 6vh;
+    background-color: rgba(32, 31, 31, 0.95);
+    border-bottom: 3px solid #FFA50090;
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.distractor-message {
+    margin-top: 10%;
+}
+
+.distractor-message svg {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em
+}
+
+.red {
+    fill: red;
+}
+
+.yellow {
+    fill: rgb(252, 255, 82);
+}
+
+.img-intro {
+    width: 100%;
+    min-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1%
+}
+
+kbd {
+    padding: 0.2em;
+    border-radius: 5px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.685)
+}
+
+.jclone {
+    background-color: rgba(32, 31, 31, 0.753);
+    border-bottom: 3px solid #FFA50090;
+    padding: 2em;
+    border-radius: 1%;
+    /* display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr */
+}
+
+.title-header {
+    font-family: Android;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center
+}
+
+#typed-strings {
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#jspsych-fullscreen-btn {
+    font-family: 'Dwarves';
+    color: black;
+    text-transform: uppercase;
+    background: orange !important;
+    opacity: 1;
+    padding: 20px;
+    /* border: 4px solid rgba(0, 0, 0, 0.561) !important; */
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-fullscreen-btn:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+#jspsych-instructions-back {
+    font-family: 'Dwarves';
+    font-size: 2vh;
+    color: #494949 !important;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    padding: 0.5em;
+    margin: 0;
+    /* border: 4px solid #494949 !important; */
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-instructions-back:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+#jspsych-instructions-next {
+    font-family: 'Dwarves';
+    font-size: 2vh;
+    color: black;
+    text-transform: uppercase;
+    background: orange !important;
+    opacity: 1;
+    padding: 0.5em;
+    margin: 0;
+    /* border: 4px solid rgba(0, 0, 0, 0.561) !important; */
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-instructions-next:hover {
+    color: #ffffff !important;
+    background: rgba(255, 166, 0, 0.294);
+    transition: all 0.4s ease 0s;
+}
+
+.jspsych-instructions-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* bottom: 1vh !important; */
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto !important;
+}
+
+#task-display-stage {
+    outline: none;
+    margin: 0 auto;
+}
+
+#asteroid-container-1 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-right;
+    animation-duration: 1.25s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-1 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-right;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes fly-right {
+    0% {
+        left: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        left: 1000px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-2 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-left;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-2 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-left;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes fly-left {
+    0% {
+        left: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        left: -1000px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-3 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-up;
+    animation-duration: 1.75s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-3 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-up;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes fly-up {
+    0% {
+        bottom: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        bottom: 1000px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-up {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-4 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-4 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes fly-down {
+    0% {
+        bottom: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        bottom: -1000px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-down {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* 
+    Keyframe Definitions
+*/
+
+@-webkit-keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+#timely-warning {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 500px;
+   width: 75vw;
+   perspective: 20em;
+   z-index: 5;
+   /* border: 3px solid limegreen; */
+}
+
+.thresh-message {
+    color: #FFA500;
+    font-family: Android, sans-serif;
+    display: block;
+    grid-area: title;
+    /* font-weight: 300; */
+    /* text-align: left; */
+}
+
+.hurt {
+    background-image: url('../img/effects/hurt.png');
+}
+
+.instructions-box {
+    padding: 1em;
+    background-color: rgba(34, 32, 30, 0.95);
+    border-radius: none;
+    text-align: center;
+    box-shadow: 1px 1px 10px #353535;
+}
+
+.instructions-box h2 {
+    font-family: 'Dwarves';
+    color: goldenrod;
+    font-size: 4vh;
+}
+
+.instructions-image {
+    object-fit: scale-down;
+}
+
+.instructions-paragraph {
+    font-size: 3vh;
+    line-height: 3.5vh;
+}
+
+.level-title {
+    font-family: Dwarves, 'sans-serif';
+    line-height: 1.5em;
+    font-size: 5vh;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.weapon-message {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.weapon-message p {
+    display: block;
+    margin: 0;
+    font-size: 2vh;
+    line-height: 2.5vh;
+}
+
+.weapon-message h2 {
+    margin: 0;
+    font-size: 3vh;
+    white-space: nowrap;
+}
+
+.weapon-title {
+    color: darkolivegreen;
+    font-weight: 900;
+}
+
+.weapon-image {
+    height: 25vh;
+    object-fit: scale-down;
+}
+.test-btn {
+    font-size: 3vh;
+    font-family: 'Dwarves';
+    background-color: goldenrod;
+    border-radius: 10px;
+    padding: 0.5em;
+    transition: 0.25s;
+    text-align: center;
+}
+.test-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.test-btn:active {
+    transform: scale(1.05)
+}
+
+.test-btn:focus{
+    outline: 0
+}
+
+.fullscreen-msg {
+    background-color: rgba(32, 31, 31, 0.753);
+    border-bottom: 3px solid #FFA50090;
+    padding: 2em;
+    font-size: 3vh;
+}
+
+.elipses {
+    font-family: serif !important;
+}
+
+/*
+    Fonts
+*/
+
+@font-face {
+    font-family: 'Dwarves';
+    src: url('../fonts/Dwarves.TTF');
+}

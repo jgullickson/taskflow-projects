@@ -1,0 +1,251 @@
+/* goblins -- specific rules*/
+.boss.mummy {
+    animation: sway 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes sway {
+    from {
+        transform: rotateY(10deg) rotateZ(-2deg) skewY(5deg);
+    }
+    to {
+        transform: rotateY(-10deg) rotateZ(2deg) skewY(-5deg);
+    }
+}
+
+.mummy-boss-container {
+    height: 40vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.mummy-boss-container.hit {
+    animation: mummy-fallback 0.25s ease-in-out 0s 2 alternate;
+}
+
+@keyframes mummy-fallback {
+    from {
+        transform: translateZ(0px) rotateX(0deg) scale(1,1);
+    }
+    to {
+        transform: translateZ(-10px) rotateX(5deg) scale(0.95,0.95);
+    }
+}
+
+.mummy-boss-container.attack {
+    animation: mummy-attack 1s ease-in 0s 2 alternate;
+}
+
+@keyframes mummy-attack {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+
+.ghost {
+    position: absolute;
+    height: 20vh;
+    opacity: 0.7;
+}
+
+.ghost img {
+    display: block;
+    height: 100%;
+    margin: 0;
+}
+
+#ghost-1 {
+    animation: fly-1 30s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translate3d(0, 0, 0) skewY(0) skewX(0);
+    }
+    25% {
+        transform: translate3d(90vw, 90vh, 0) skewY(25deg) skewX(0deg);
+    }
+    50% {
+        transform: translate3d(10vw, 80vh, 0) skewY(-25deg) skewX(0deg);
+    }
+    75% {
+        transform: translate3d(80vw, 11vh, 0) skewY(25deg) skewX(0deg);
+    }
+    to {
+        transform: translate3d(90vw, 70vh, 0) skewY(-25deg) skewX(0deg);
+    }
+}
+
+#ghost-2 {
+    animation: fly-2 30s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-2 {
+    from {
+        transform: translate3d(75vw, 0, 0) skewY(0) skewX(0);
+    }
+    25% {
+        transform: translate3d(10vw, 75vh, 0) skewY(25deg) skewX(0deg);
+    }
+    50% {
+        transform: translate3d(30vw, 40vh, 0) skewY(-25deg) skewX(0deg);
+    }
+    75% {
+        transform: translate3d(83vw, 11vh, 0) skewY(25deg) skewX(0deg);
+    }
+    to {
+        transform: translate3d(21vw, 55vh, 0) skewY(-25deg) skewX(0deg);
+    }
+}
+
+#ghost-3 {
+    animation: fly-3 25s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-3 {
+    from {
+        transform: translate3d(1vw, 20vh, 0) skewY(0) skewX(0);
+    }
+    25% {
+        transform: translate3d(125vw, 35vh, 0) skewY(25deg) skewX(0deg);
+    }
+    50% {
+        transform: translate3d(-20vw, 10vh, 0) skewY(-25deg) skewX(0deg);
+    }
+    75% {
+        transform: translate3d(130vw, 50vh, 0) skewY(25deg) skewX(0deg);
+    }
+    to {
+        transform: translate3d(-25vw, 15vh, 0) skewY(-25deg) skewX(0deg);
+    }
+}
+
+#ghost-4 {
+    animation: fly-4 19s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-4 {
+    from {
+        transform: translate3d(90vw, 30vh, 0) skewY(0) skewX(0);
+    }
+    25% {
+        transform: translate3d(-20vw, 35vh, 0) skewY(25deg) skewX(0deg);
+    }
+    50% {
+        transform: translate3d(130vw, 10vh, 0) skewY(-25deg) skewX(0deg);
+    }
+    75% {
+        transform: translate3d(-30vw, 50vh, 0) skewY(25deg) skewX(0deg);
+    }
+    to {
+        transform: translate3d(119vw, 15vh, 0) skewY(-25deg) skewX(0deg);
+    }
+}
+
+#ghost-5 {
+    animation: fly-5 40s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-5 {
+    from {
+        transform: translate3d(0vw, 50vh, 0) skewY(0) skewX(0) scale(0.01);
+    }
+    25% {
+        transform: translate3d(20vw, 35vh, 0) skewY(25deg) skewX(0deg) scale(2.1);
+    }
+    50% {
+        transform: translate3d(70vw, 20vh, 0) skewY(-25deg) skewX(0deg) scale(1.3);
+    }
+    75% {
+        transform: translate3d(3vw, 50vh, 0) skewY(25deg) skewX(0deg) scale(0.5);
+    }
+    to {
+        transform: translate3d(100vw, 15vh, 0) skewY(-25deg) skewX(0deg) scale(3.5);
+    }
+}
+
+#ghost-6 {
+    animation: fly-6 23s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly-6 {
+    from {
+        transform: translate3d(90vw, 61vh, 0) skewY(0) skewX(0) scale(0.001);
+    }
+    25% {
+        transform: translate3d(73vw, 35vh, 0) skewY(25deg) skewX(0deg) scale(2.0);
+    }
+    50% {
+        transform: translate3d(92vw, 20vh, 0) skewY(-25deg) skewX(0deg) scale(1.7);
+    }
+    75% {
+        transform: translate3d(3vw, 34vh, 0) skewY(25deg) skewX(0deg) scale(0.2);
+    }
+    to {
+        transform: translate3d(11vw, 25vh, 0) skewY(-25deg) skewX(0deg) scale(3.1);
+    }
+}
+
+#ghost-scene {
+    perspective: 30em;
+    transform-style: preserve-3d;
+}
+
+#ghosteroid-1 {
+    animation: fly-right 1s ease-in 1 forwards;
+}
+
+@keyframes fly-right {
+    from {
+        top: -50%;
+        left: 60%;
+        transform: translateX(-70%) skewY(-25deg) scale(0)
+    }
+    to {
+        left: 160%;
+        transform: translateX(-70%) skewY(-45deg) scale(20);
+    }
+}
+
+#ghosteroid-2 {
+    animation: fly-left 1s ease-in 1 forwards;
+}
+
+@keyframes fly-left {
+    from {
+        top: -50%;
+        left: 60%;
+        transform: translateX(-70%) skewY(25deg) scale(0)
+    }
+    to {
+        left: -160%;
+        transform: translateX(-70%) skewY(45deg) scale(20);
+    }
+}

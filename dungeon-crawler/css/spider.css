@@ -1,0 +1,257 @@
+/* spider -- specific rules*/
+.boss.spider {
+    animation: sway 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes sway {
+    from {
+        transform: rotateY(10deg) rotateZ(-2deg) skewY(5deg);
+    }
+    to {
+        transform: rotateY(-10deg) rotateZ(2deg) skewY(-5deg);
+    }
+}
+
+.spider-boss-container {
+    height: 80vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 10%;
+}
+
+.spider-boss-container.hit {
+    animation: spider-fallback 0.25s ease-in-out 0s 2 alternate;
+}
+
+@keyframes spider-fallback {
+    from {
+        transform: translateZ(0px) rotateX(0deg) scale(1,1);
+    }
+    to {
+        transform: translateZ(-50px) rotateX(-20deg) scale(0.8,0.8);
+    }
+}
+
+.spider-boss-container.attack {
+    animation: snapforward 0.5s ease-in-out 0s 1 forwards;
+}
+
+@keyframes snapforward {
+    from {
+        transform: rotateX(0deg);
+    }
+    30% {
+        transform: rotateX(25deg);
+    }
+    60% {
+        transform: rotateX(-25deg) translateZ(300px);
+    }
+    to {
+        transform: rotateX(0deg) translateZ(0px);;
+    }
+}
+
+.mini-spider {
+    position: absolute;
+    height: 30vh;
+    left: 35%;
+}
+
+.mini-spider img {
+    display: block;
+    margin: 0;
+    height: 100%;
+    animation: spiderwalk 0.2s linear 0s infinite both;
+}
+@keyframes spiderwalk {
+    from {
+        transform: rotateZ(0deg)
+    }
+    50% {
+        transform: rotateZ(-15deg)
+    }
+    75% {
+        transform: rotateZ(0deg)
+    }
+    to {
+        transform: rotateZ(15deg)
+    }
+}
+
+/* #mini-spider-hang-1 {
+    position: absolute;
+    height: 30vh;
+    left: 50%;
+    animation: dangle-1 0.5s ease-in-out 0s 1 forwards;
+}
+
+@keyframes dangle-1 {
+    from {
+        top: -1000px
+    }
+    to {
+        top: -900px
+    }
+} */
+
+/* #mini-spider-hang-2 {
+    
+} */
+
+#mini-spider-1 {
+    animation: crawl-1 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-1 {
+    from {
+        transform: translate3d(10rem,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(20rem, 3.5rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-2 {
+    animation: crawl-2 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-2 {
+    from {
+        transform: translate3d(0,0,-7rem) scale(0)
+    }
+    to {
+        transform: translate3d(-20rem, 5rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-3 {
+    animation: crawl-3 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-3 {
+    from {
+        transform: translate3d(0,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(-25rem, 4rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-4 {
+    animation: crawl-4 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-4 {
+    from {
+        transform: translate3d(0,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(25rem, 6rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-5 {
+    animation: crawl-5 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-5 {
+    from {
+        transform: translate3d(15rem,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(16rem, 5rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-6 {
+    animation: crawl-6 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-6 {
+    from {
+        transform: translate3d(10rem,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(11rem, 6rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-7 {
+    animation: crawl-7 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-7 {
+    from {
+        transform: translate3d(-15rem,0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(-17rem, 6rem, 15rem) scale(1)
+    }
+}
+
+#mini-spider-8 {
+    animation: crawl-8 1s linear 0s 1 forwards;
+}
+
+@keyframes crawl-8 {
+    from {
+        transform: translate3d(-11rem, 0,-5rem) scale(0)
+    }
+    to {
+        transform: translate3d(-12rem, 6rem, 15rem) scale(1)
+    }
+}
+
+#spiderweb {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: -150%;
+    left: -20%;
+}
+
+.spider-hanger {
+    position: absolute;
+    width: 25vw;
+    top: -150%;
+    animation: dangle 5s ease-in-out infinite both;
+}
+
+.spider-hanger img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+@keyframes dangle {
+    from {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(50%)
+    }
+    to {
+        transform: translateY(0%)
+    }
+}
+
+#spider-hanger-1{
+    left: 5%;
+    animation-delay: 1s 
+}
+
+#spider-hanger-2{
+    left: 25%;
+    animation-delay: 5s 
+}
+
+#spider-hanger-3{
+    left: 60%;
+    animation-delay: 7s;
+}
+
+#spider-hanger-4{
+    left: 80%;
+    animation-delay: 3s;
+}

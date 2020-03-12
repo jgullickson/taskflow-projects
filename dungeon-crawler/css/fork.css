@@ -1,0 +1,55 @@
+#fork {
+    height: 90vh;
+    display: block;
+    margin: auto;
+    width: auto;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.fork-steady {
+    animation: fork-steady 5s ease-in-out 0s infinite both alternate;
+}
+
+@keyframes fork-steady {
+    from {
+        transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg) rotateZ(25deg);
+    }
+    to {
+        transform: translate3d(5px,3px,-1px) rotateX(3deg) rotateY(2deg) rotateZ(35deg);;
+    }
+}
+
+.fork-left {
+    animation: fork-left 0.5s ease-in-out 0s 2 both alternate;
+}
+
+@keyframes fork-left {
+    from {
+        transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg) rotateZ(25deg);
+        /* transform: translate3d(0,0,0) rotateX(15deg) rotateY(10deg); */
+    }
+    25% {
+        transform: rotateZ(45deg) translate3d(500px,-500px,25px)
+    }
+    to {
+        transform: rotateZ(-100deg) rotateX(15deg) translate3d(-500px,100px,-50px)
+        /* transform: rotateZ(100deg) rotateX(15deg) translate3d(500px,100px,-50px) */
+    }
+}
+
+.fork-right {
+    animation: fork-right 0.5s ease-in-out 0s 2 both alternate;
+}
+
+@keyframes fork-right {
+    from {
+        transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg) rotateZ(25deg);
+    }
+    25% {
+        transform: rotateZ(-45deg) translate3d(-500px, -100px,25px)
+    }
+    to {
+        transform: rotateZ(100deg) rotateX(15deg) translate3d(500px,100px,-50px)
+    }
+}

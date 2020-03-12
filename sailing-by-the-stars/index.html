@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>Dot Pattern Expectancy - Constellations</title>
+
+    <!-- Library CSS -->
+    <link rel='stylesheet' type='text/css' href='lib/jspsych/css/jspsych.css'>
+    
+    <!-- Custom Styles -->
+    <link rel='stylesheet' type='text/css' href='css/default_style.css'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/background.css'>
+    <link rel='stylesheet' type='text/css' href='css/fixation.css'>
+</head>
+
+<body>
+    <!-- <audio style="display: none;" controls autoplay>
+        <source src="sounds/background/ocean.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> -->
+
+    <div id="layers">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+
+    <div id="task-display-stage"></div>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
+    <!-- Library Code -->
+    <script src='lib/howler/howler.min.js'></script>
+    <script src='lib/jspsych/jspsych.js'></script>
+    <script src='lib/jspsych/plugins/dpx-html-keyboard-response.js'></script>
+    <script src='lib/jspsych/plugins/html-response.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-fullscreen.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-instructions.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-html-keyboard-response.js'></script>
+    <script src='lib/taskflow/client.js'></script>
+
+    <!-- Application Specific Code Block -->
+    <script src='js/editor/options.js'></script>
+    <script src='js/editor/configuration.js'></script>
+    <script src='js/editor/global-configuration.js'></script>
+    <script src='js/generator.js'></script>
+    <script src='js/utilities.js'></script>
+    <script src='js/app.js'></script>
+
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>

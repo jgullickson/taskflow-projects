@@ -1,0 +1,67 @@
+.feedback-box {
+    max-width: 100%;
+    padding: 0.25em;
+    box-shadow: 1px 1px 10px #353535;
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: rgba(34, 32, 30, 0.95);
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid rgba(218, 165, 32, 0.808);
+  }
+  
+  .feedback-x, .feedback-check {
+    font-weight: bold;
+  }
+  
+  .feedback-x {
+    color: #FF5733;
+  }
+  
+  .feedback-check {
+    color: #2ECC71;
+  }
+  
+  .icon-container i {
+    font-size: 5vh;
+  }
+  
+  .feedback-sub {
+    text-align: center;
+    padding: 1vh;
+    margin: 1vh;
+  }
+  .feedback-sub h2 {
+    color: goldenrod;
+    font-size: 3vh;
+    font-weight: 500;
+    border-bottom: 2px solid goldenrod;
+    font-family: 'Dwarves', sans-serif;
+    white-space: nowrap;
+    padding: 0.25em;
+  }
+  .feedback-sub p {
+    font-size: 1.75vh;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .feedback-sub p span {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 3vh;
+  }
+  
+  .pass {
+    color: #2ECC71;
+    font-weight: 600;
+  }
+  
+  .fail {
+    color: #FF5733;
+    font-weight: 600;
+  }
+  
+  #goal-accuracy, #goal-median_rt, #goal-median_difference_rt {
+    color: #85C1E9;
+  }

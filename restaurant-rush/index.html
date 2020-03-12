@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurant N-Back</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jspsych.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Needed for this to work in Electron properly. -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src='lib/howler/howler.min.js'></script>
+    <script src='lib/jspsych/jspsych.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-fullscreen.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-html-keyboard-response.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-instructions.js'></script>
+    <script src='lib/jspsych/plugins/html-response.js'></script>
+    <script src='lib/taskflow/client.js'></script>
+
+    <!-- Custom Task Specific Code -->
+    <script src='js/editor/options.js'></script>
+    <script src='js/generators.js'></script>
+    <script src='js/editor/configuration.js'></script>
+    <script src='js/editor/global-configuration.js'></script>
+    <script src='js/utilities.js'></script>
+   
+    <script src='js/app.js'></script>
+
+    <!-- Needed for this to work in Electron properly. -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>

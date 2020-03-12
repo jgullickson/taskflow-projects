@@ -1,0 +1,292 @@
+body {
+    background-image: url('../img/restaurant_bg.svg');
+    background-size: cover;
+}
+
+.test-btn {
+    margin: 0.25em;
+    font-size: 2em;
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.fixation {
+    font-size: 10vh;
+    font-weight: bold;
+    font-family: 'Staatliches', sans-serif;
+    color: rgb(228, 228, 228);
+}
+
+#logo {
+    max-height: 60vh;
+    max-width: 75%;
+    object-fit: scale-down;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "one two"
+    "three four";
+    grid-gap: 10px;
+    margin: 30px;
+}
+
+.grid div {
+   padding: 5%;
+}
+
+.accuracy-msg {
+    font-size: 40pt;
+    line-height: initial;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.cell {
+    flex: 0 0 32%;
+    /* don't grow, don't shrink, width */
+    height: 32vh;
+    margin-top: 1%;
+    margin-bottom: 5px;
+    background-color: #999;
+}
+
+.jspsych-display-element {
+    text-align: center;
+    margin-top: 10%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    text-align: left
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+/* .row .jumbotron {
+    max-width: 50%;
+} */
+
+
+
+.intro-img {
+    margin-bottom: 25px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh !important;
+    object-fit: contain !important;
+}
+
+.img-cont {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.intro-img-flex {
+    height: auto;
+    width: 95%;
+    max-height: 20vh;
+    object-fit: contain;
+}
+
+td {
+    position: relative;
+    padding: 10px;
+}
+
+.qst {
+    position: absolute;
+    left: 45%; 
+    top: 45%; 
+    color: red;
+    font-size: 100pt
+}
+
+.jt-sm {
+    max-width: 50%;
+}
+
+.img-sm {
+    display: block;
+    max-height: 25vh;
+    width: auto;
+    object-fit: scale-down;
+}
+
+.intro-block-sm {
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-label-sm {
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid grey;
+    color: white;
+}
+
+.jumbotron-dark {
+    background-color: rgb(39, 36, 36);
+    border-bottom: 5px solid darkred;
+    box-shadow: 5px;
+    padding: 20px;
+    max-height: 75%;
+}
+
+.slim {
+    padding: 20px;
+}
+
+.tr-icon {
+    border-bottom: 5px solid darkred;
+    border-radius: 5px;
+    font-size: 40pt;
+    max-height: 30%
+}
+
+#example-grid {
+    grid-template-areas:
+    "one"
+    "two";
+}
+
+#row1, #row2  {
+    grid-area: one;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+    width: 100%;
+}
+
+#row1 {
+    margin-bottom: 20px;
+}
+
+#row1 div, #row2 div {
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#server {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.level-title {
+    font-family: 'Staatliches';
+    color: rgb(207, 49, 49);
+    text-align: left;
+    font-size: 6vh;
+}
+
+.fb-msg {
+    font-family: 'Staatliches', sans-serif !important;
+    font-size: 10vh !important;
+    line-height: 10.1vh !important;
+    background-color: rgb(228, 228, 228);
+    padding: 1.5vh;
+    border-radius: 10px;
+}
+
+#fullscreen-msg {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color:  rgb(228, 228, 228);
+    background-color: rgb(39, 36, 36);
+    padding: 1rem;
+    border-radius: 10px;
+    border-bottom: 5px solid darkred;
+}
+
+.feedback-percent {
+    background-color: rgb(228, 228, 228);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.stimulus-image-plate {
+    background-color: rgb(255, 255, 255);
+    border: 6px solid rgb(196, 188, 188);
+    height: 70vh;
+    width: 70vh;
+    max-height: 800px;
+    max-width: 800px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stimulus-image {
+    max-height: 50vh;
+    object-fit: contain;
+}
+
+/* .stimulus-image {
+    max-height: 512px;
+    max-width: 512px;
+    object-fit: contain;
+} */
+
+#jspsych-instructions-next, #jspsych-instructions-back, #jspsych-fullscreen-btn {
+    background-color: rgba(216, 106, 33, 0.911);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vh;
+    color:  rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+#jspsych-instructions-next kbd, #jspsych-instructions-back kbd, #jspsych-fullscreen-btn kbd {
+    background-color: #161614;
+}
+
+#jspsych-instructions-next:hover, #jspsych-instructions-back:hover, #jspsych-fullscreen-btn:hover {
+    background-color: rgba(238, 133, 64, 0.911);
+    transition-duration: 0.1s
+}
+
+@media (max-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-cont {
+        max-width: 95%;
+    }
+
+    .jumbotron {
+        max-width: 95%;
+        margin: 1em;
+    }
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url('../fonts/Staatliches-Regular.ttf');
+}

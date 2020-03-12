@@ -1,0 +1,63 @@
+#scene-weapon {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 20%;
+    perspective: 5em;
+    /* border: 3px solid red; */
+    z-index: 100;
+}
+
+#sword {
+    height: 90vh;
+    display: block;
+    margin: auto;
+    width: auto;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.steady {
+    animation: steady 5s ease-in-out 0s infinite both alternate;
+}
+
+@keyframes steady {
+    from {
+        transform: translate3d(0,0,0) rotateX(15deg) rotateY(10deg);
+    }
+    to {
+        transform: translate3d(50px,30px,-10px) rotateX(35deg) rotateY(20deg);
+    }
+}
+
+.swing-left {
+    animation: swing-left 0.5s ease-in-out 0s 2 both alternate;
+}
+
+@keyframes swing-left {
+    from {
+        transform: translate3d(0,0,0) rotateX(15deg) rotateY(10deg);
+    }
+    25% {
+        transform: rotateZ(45deg) translate3d(500px,-500px,25px)
+    }
+    to {
+        transform: rotateZ(-100deg) rotateX(15deg) translate3d(-500px,100px,-50px)
+    }
+}
+
+.swing-right {
+    animation: swing-right 0.5s ease-in-out 0s 2 both alternate;
+}
+
+@keyframes swing-right {
+    from {
+        transform: translate3d(0,0,0) rotateX(15deg) rotateY(10deg);
+    }
+    25% {
+        transform: rotateZ(-45deg) translate3d(-500px,-500px,25px)
+    }
+    to {
+        transform: rotateZ(100deg) rotateX(15deg) translate3d(500px,100px,-50px)
+    }
+}

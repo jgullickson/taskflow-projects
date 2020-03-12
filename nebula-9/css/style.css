@@ -1,0 +1,664 @@
+body {
+    color: rgb(255, 255, 255, 0.75);
+    overflow: hidden;
+}
+
+.test-btn {
+    margin: 0.25em;
+    font-size: 2.5vh;
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+    opacity: 0.85;
+    font-family: Android, sans-serif;
+}
+
+.test-text {
+    font-size: 1.5rem;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.jspsych-content {
+position: relative;
+}
+
+#distractor-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.flanker-text {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.in-line-img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.img-intro {
+    width: auto;
+    max-width: 100%;
+    /* min-width: 600px; */
+    height: auto;
+    max-height: 25vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1%
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "top"
+    "bottom";
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr; */
+    width: auto;
+    max-width: 100%;
+    /* min-width: 600px; */
+    height: auto;
+    max-height: 100vh;
+}
+.container-grid-s {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "top"
+    "bottom";
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr; */
+    width: auto;
+    max-width: 100%;
+    /* min-width: 600px; */
+    height: auto;
+    max-height: 100vh;
+}
+
+@media (max-height: 1200px) {
+    .container-grid {
+        grid-template-areas:
+        "title title"
+        "top bottom";
+    }
+    .img-intro {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 1%;
+        object-fit: scale-down;
+    }
+  }
+
+.gridchild-1 {
+    margin: 2em;
+    grid-area: bottom;
+    margin-top: 0;
+}
+
+.gridchild-1 .block-text {
+    font-size: 3vh;
+}
+
+.gridchild-1-s {
+    margin: 2em;
+    grid-area: bottom;
+    margin-top: 0;
+}
+
+.gridchild-1-s .block-text {
+    font-size: 3vh;
+}
+
+.p-cont {
+    width: auto;
+    max-width: 100%;
+    /* min-width: 600px; */
+    height: auto;
+    max-height: 100%;
+}
+
+.gridchild-2 {
+    margin: 2em;
+    grid-area: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.gridchild-2-s {
+    margin: 2em;
+    grid-area: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+
+
+.responded {
+    visibility: hidden;
+}
+
+.arrow-intro {
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    opacity: 0.75;
+    margin-bottom: 25px
+}
+
+#task-display-stage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    text-align: center;
+    /* padding-top: 250px; */
+}
+
+@media (max-width: 2000px) {
+    #task-display-stage {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        text-align: center;
+        width: 75vw;
+        /* padding-top: 250px; */
+    }
+  }
+
+  @media (max-width: 1300px) {
+    #task-display-stage {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        text-align: center;
+        width: 85vw;
+        /* padding-top: 250px; */
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #task-display-stage {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        text-align: center;
+        width: 90vw;
+        /* padding-top: 250px; */
+    }
+  }
+
+  @media (max-width: 1100px) {
+    #task-display-stage {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        text-align: center;
+        width: 95vw;
+        /* padding-top: 250px; */
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .container-grid {
+        grid-template-areas: 
+        "title title"
+        "top top"
+        "bottom bottom";
+    }
+    .gridchild-1 {
+        grid-area: bottom;
+    }
+  }
+
+
+.tight {
+    padding: 0px;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 150px
+}
+
+@media (max-width: 1200px) {
+    
+.tight {
+    padding: 0px;
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 75px;
+    max-width: 750px
+}
+}
+
+div.jspsych-poldrack-categorize-stimulus {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+}
+
+div.jspsych-poldrack-categorize-stimulus img {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+}
+
+#instruction-text-effect {
+    padding-top: 50px;
+}
+
+/* .left {
+    -moz-transform: scaleX(-1) !important;
+    -o-transform: scaleX(-1) !important;
+    -webkit-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+    filter: FlipH !important;
+    -ms-filter: "FlipH" !important;
+}
+
+#flanker-left {
+    -moz-transform: scaleX(-1) !important;
+    -o-transform: scaleX(-1) !important;
+    -webkit-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+    filter: FlipH !important;
+    -ms-filter: "FlipH" !important;
+} */
+
+.target {
+    fill: rgb(255, 255, 255, 0.75);
+}
+
+#yellow {
+    fill: rgb(255, 255, 0, 0.75);
+}
+
+.stimuli-container {
+    width: 30vw;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-message {
+    font-family: Android;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.distractor-message {
+    margin-top: 10%;
+    white-space: nowrap;
+}
+
+.distractor-message svg {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em
+}
+
+.red {
+    fill: red;
+}
+
+.yellow {
+    fill: rgb(252, 255, 82);
+}
+
+kbd {
+    background-color: #FFA50075;
+}
+
+.jclone {
+    background-color: rgba(32, 31, 31, 0.753);
+    border-bottom: 3px solid #FFA50090;
+    padding: 2vh;
+    /* display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr */
+}
+
+.title-header {
+    font-family: Android;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center
+}
+
+#typed-strings {
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#jspsych-fullscreen-btn {
+    color: orange !important;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    padding: 20px;
+    border: 4px solid orange !important;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-fullscreen-btn:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+#jspsych-instructions-back {
+    color: #494949 !important;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-instructions-back:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+#jspsych-instructions-next {
+    color: orange !important;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    padding: 20px;
+    border: 4px solid orange !important;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#jspsych-instructions-next:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+#task-display-stage {
+    outline: none
+}
+
+#asteroid-container-1 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-right;
+    animation-duration: 1.25s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-1 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fly-right {
+    0% {
+        left: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        left: 1500px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-2 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-left;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-2 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fly-left {
+    0% {
+        left: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        left: -1500px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-3 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-up;
+    animation-duration: 1.75s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-3 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-up;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fly-up {
+    0% {
+        bottom: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        bottom: 1500px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-up {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#asteroid-container-4 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: fly-down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#asteroid-4 {
+    height: 90%;
+    width: 90%;
+    animation-name: spin-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fly-down {
+    0% {
+        bottom: 0px;
+        transform:scale(1,1); 
+    }
+    100% {
+        bottom: -1500px;
+        transform:scale(10, 10); 
+    }
+}
+
+@keyframes spin-down {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* 
+    Keyframe Definitions
+*/
+
+@-webkit-keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+#timely-warning {
+   position: absolute;
+   left: 50%;
+}
+
+.thresh-message {
+    color: #FFA500;
+    font-family: Android, sans-serif;
+    display: block;
+    grid-area: title;
+    font-size: 4vh;
+    /* font-weight: 300; */
+    /* text-align: left; */
+}
+
+.thresh-message-green {
+    color: rgb(0, 255, 115);
+    font-family: Android, sans-serif;
+    display: block;
+    grid-area: title;
+    /* font-weight: 300; */
+    /* text-align: left; */
+}
+
+/*
+    Fonts
+*/
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/android-assassin.ttf');
+}

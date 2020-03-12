@@ -1,0 +1,68 @@
+#scene-weapon {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 20%;
+    perspective: 5em;
+    /* border: 3px solid red; */
+    z-index: 100;
+    transform-style: preserve-3d;
+}
+
+#bow {
+    height: 90vh;
+    display: block;
+    margin: 0;
+    width: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    left: 35% ;
+    bottom: -70px;
+    background-image: url('../img/weapons/bow-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.bow-steady {
+    animation: bow-steady 10s ease-in-out 0s infinite both alternate;
+}
+
+@keyframes bow-steady {
+    from {
+        transform: rotateX(25deg) rotateZ(25deg) translateY(30%) translateX(0);
+    }
+    to {
+        transform: rotateX(25deg) rotateZ(22deg) translateY(30%) translateX(2%);
+    }
+}
+
+.shoot-left {
+    animation: shoot-left 0.1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes shoot-left {
+    from {
+        transform: rotateX(25deg) rotateZ(25deg) translateY(30%) translateX(0);
+        background-image: url('../img/weapons/bow-arrow.svg');
+    }
+    to {
+        transform: rotateX(25deg) rotateZ(25deg) translateY(30%) translateX(0);
+        background-image: url('../img/weapons/bow.svg');
+    }
+}
+
+.shoot-right {
+    animation: shoot-right 0.1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes shoot-right {
+    from {
+        transform: rotateX(25deg) rotateZ(25deg) translateY(30%) translateX(0);
+        background-image: url('../img/weapons/bow-arrow.svg');
+    }
+    to {
+        transform: rotateX(25deg) rotateZ(25deg) translateY(30%) translateX(0);
+        background-image: url('../img/weapons/bow.svg');
+    }
+}

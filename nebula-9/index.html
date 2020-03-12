@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Space Flanker</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex">
+
+    <link rel='stylesheet' type='text/css' href='css/animate.css' />
+    <link rel='stylesheet' type='text/css' href='css/cloudstyle.css'>
+    <link rel='stylesheet' type='text/css' href='css/fixation.css'>
+    <link rel='stylesheet' type='text/css' href='css/jspsych.css'>
+    <link rel='stylesheet' type='text/css' href='css/default_style.css'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/asteroids.css'>
+    <link rel='stylesheet' type='text/css' href='css/aliens.css'>
+    <link rel='stylesheet' type='text/css' href='css/performance_block.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div id="task-display-stage"></div>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div id="distractor-layer"></div>
+
+    <!-- Needed for Electron to work -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
+    <!-- JS Libraries -->
+    <script src='lib/howler/howler.min.js'></script>
+    <script src='lib/jspsych/jspsych.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-fullscreen.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-instructions.js'></script>
+    <script src='lib/jspsych/plugins/flanker-html-keyboard-response.js'></script>
+    <script src='lib/jspsych/plugins/jspsych-html-keyboard-response.js'></script>
+    <script src='lib/jspsych/plugins/html-response.js'></script>
+    <script src='lib/taskflow/client.js'></script>
+    <script src='lib/typed/typed.min.js'></script>
+
+    <!-- Experiment Code. -->
+    
+    <script src='js/editor/options.js'></script>
+    <script src='js/generator.js'></script>
+    <script src='js/editor/configuration.js'></script>
+    <script src='js/editor/global-configuration.js'></script>
+    <script src='js/utilities.js'></script>
+    <script src='js/app.js'></script>
+
+    <!-- Needed for Electron to work -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
+</body>
+
+</html>

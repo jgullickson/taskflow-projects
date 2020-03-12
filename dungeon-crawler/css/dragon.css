@@ -1,0 +1,137 @@
+/* dragons -- specific rules*/
+.boss.dragon {
+    animation: sway 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes sway {
+    from {
+        transform: rotateY(10deg) rotateZ(-2deg) skewY(5deg);
+    }
+    to {
+        transform: rotateY(-10deg) rotateZ(2deg) skewY(-5deg);
+    }
+}
+
+.dragon-boss-container {
+    height: 80vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 10%;
+    transform: rotateY(-20deg);
+}
+
+.dragon-boss-container.hit {
+    animation: dragon-fallback 0.25s ease-in-out 0s 2 alternate;
+}
+
+@keyframes dragon-fallback {
+    from {
+        transform: translateZ(0px) rotateX(0deg) scale(1,1);
+    }
+    to {
+        transform: translateZ(-50px) rotateX(20deg) scale(0.8,0.8);
+    }
+}
+
+.dragon-boss-container.attack {
+    animation: breathefire 0.5s ease-in 0s 2 alternate;
+}
+
+@keyframes breathefire {
+    from {
+        transform: rotateY(0) skewX(0) translate3d(0,0,0)
+    }
+    to {
+        transform: rotateY(-170deg) skewX(30deg) translate3d(0,0,20em)
+    }
+}
+
+.dragon-boss-container.breathe-fire {
+    animation: breathefire 0.5s ease-in 0s 2 alternate;
+}
+
+@keyframes breathefire {
+    from {
+        transform: rotateY(0) skewX(0) scale(1)
+    }
+    to {
+        transform: rotateY(-170deg) skewY(-30deg)
+    }
+}
+
+.fireball-container {
+    position: absolute;
+    height: 20vh;
+    left: 40%;
+}
+
+.fireball-container img {
+    height: 100%;
+    animation: fire-flicker 0.25s linear 0s infinite forwards;
+}
+
+@keyframes fire-flicker {
+    from {
+        filter: none
+    }
+    to {
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    }
+}
+
+#fireball-container-1 {
+    left: 30%;
+    animation: flame-1 1.5s linear 1 forwards;
+}
+
+@keyframes flame-1 {
+    from { 
+        transform: rotateZ(-65deg) scale(0) translate3d(0,0,0);
+    }
+    to {
+        transform: rotateZ(-65deg) scale(10) translate3d(-15vw,-15vw,0);
+    }
+}
+
+#fireball-container-2 {
+    left: 60%;
+    animation: flame-2 1.5s linear 1 forwards;
+}
+
+@keyframes flame-2 {
+    from { 
+        transform: rotateZ(65deg) scale(0) translate3d(0,0,0);
+    }
+    to {
+        transform: rotateZ(65deg) scale(10) translate3d(15vw,-15vw,0);
+    }
+}
+
+#fireball-container-3 {
+    left: 40%;
+    animation: flame-3 1.5s linear 1 forwards;
+}
+
+@keyframes flame-3 {
+    from { 
+        transform: rotateZ(-35deg) scale(0) translate3d(0,0,0);
+    }
+    to {
+        transform: rotateZ(-35deg) scale(10) translate3d(-15vw,-15vw,0);
+    }
+}
+
+#fireball-container-4 {
+    left: 50%;
+    animation: flame-4 1.5s linear 1 forwards;
+}
+
+@keyframes flame-4 {
+    from { 
+        transform:  rotateZ(35deg) scale(0) translate3d(0,0,0);
+    }
+    to {
+        transform:  rotateZ(35deg) scale(10) translate3d(15vw,-15vw,0);
+    }
+}

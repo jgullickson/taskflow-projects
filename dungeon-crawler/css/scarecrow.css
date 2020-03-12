@@ -1,0 +1,57 @@
+.boss.scarecrow {
+    animation:  scarecrow 7s ease-in-out 0s infinite alternate;
+}
+
+@keyframes scarecrow {
+    from {
+        transform: rotateY(-10deg) rotateZ(5deg);
+    }
+    to {
+        transform: rotateY(10deg) rotateZ(-5deg);
+    }
+}
+
+.scarecrow-boss-container {
+    height: 100vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    bottom: -25%;
+}
+
+.scarecrow.damage {
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+
+.scarecrow-boss-container.hit {
+    animation: fallback 0.25s ease-in-out 0s 2 alternate;
+}
+
+@keyframes fallback {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(25deg);
+    }
+}
+
+.scarecrow-boss-container.attack {
+    animation: snapforward 0.5s ease-in-out 0s 1 forwards;
+}
+
+@keyframes snapforward {
+    from {
+        transform: rotateX(0deg);
+    }
+    30% {
+        transform: rotateX(25deg);
+    }
+    60% {
+        transform: rotateX(-25deg) translateZ(300px);
+    }
+    to {
+        transform: rotateX(0deg) translateZ(0px);;
+    }
+}
