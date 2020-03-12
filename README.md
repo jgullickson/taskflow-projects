@@ -37,3 +37,10 @@ These tasks are configured to run from the lab's proprietary server and web plat
 ![Nebula 9 gameplay showing asteroid impact warning](./screenshots/flanker-space-3.png)
 
 ![Nebula 9 performance dashboard](./screenshots/flanker-space-4.png)
+
+### Dungeon Crawler (Flanker)
+
+![Dungeon crawler gameplay showing a battle with a spider](./screenshots/flanker-dugeon-1.png)
+
+![Dungeon crawler performance dashboard showing a newly earned weapon](./screenshots/flanker-dugeon-2.png)
+
