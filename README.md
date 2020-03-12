@@ -40,7 +40,7 @@ These tasks are configured to run from the lab's proprietary server and web plat
 
 ### Dungeon Crawler (Flanker)
 
-![Dungeon crawler gameplay showing a battle with a spider](./screenshots/flanker-dugeon-1.png)
+![Dungeon crawler gameplay showing a battle with a spider](./screenshots/flanker-dungeon-1.png)
 
-![Dungeon crawler performance dashboard showing a newly earned weapon](./screenshots/flanker-dugeon-2.png)
+![Dungeon crawler performance dashboard showing a newly earned weapon](./screenshots/flanker-dungeon-3.png)
 
