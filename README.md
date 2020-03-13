@@ -9,6 +9,10 @@ These tasks are based on standard psychological tasks that engage working memory
 
 **NOTE:** The task behavior and layout was *not* designed to be mobile-friendly, as they require keyboard responses.
 
+Key dependencies:
+  - [jsPsych](https://github.com/jspsych/jsPsych/)
+  - [howler.js](https://github.com/goldfire/howler.js/)
+
 ## How to access tasks
   1. Download and extract
   2. Open index.html (one for each task)
